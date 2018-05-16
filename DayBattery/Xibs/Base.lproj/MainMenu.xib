@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14109"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="DayBattery" customModuleProvider="target">
+            <connections>
+                <outlet property="dayItem" destination="014-at-8U2" id="Oj1-ma-cQu"/>
+                <outlet property="monthItem" destination="DIG-SD-ywb" id="HIV-LU-0A0"/>
+                <outlet property="statusMenu" destination="Lqo-KI-LfH" id="4SW-Ke-yDD"/>
+                <outlet property="yearItem" destination="ENA-Df-w91" id="UUn-eo-QWz"/>
+            </connections>
+        </customObject>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <menu id="Lqo-KI-LfH">
+            <items>
+                <menuItem title="Day:" id="014-at-8U2">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="changeMode:" target="Voe-Tx-rLC" id="VOl-hs-f2F"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Month:" id="DIG-SD-ywb">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="changeMode:" target="Voe-Tx-rLC" id="vSg-jp-lSJ"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Year:" id="ENA-Df-w91">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="changeMode:" target="Voe-Tx-rLC" id="CoW-up-olq"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="GA7-Eg-p2u"/>
+                <menuItem title="Preferences..." id="bHf-90-mTm">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="openPreferences:" target="Voe-Tx-rLC" id="Jun-lb-XN9"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="qDe-iS-8Z3"/>
+                <menuItem title="Quit" id="hwh-Iu-buV">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="quit:" target="Voe-Tx-rLC" id="S92-Lq-9lO"/>
+                    </connections>
+                </menuItem>
+            </items>
+        </menu>
+    </objects>
+</document>
